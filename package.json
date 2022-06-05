@@ -2,7 +2,7 @@
   "name": "managerapibizagi",
   "version": "1.0.0",
   "description": "Manager api BizAgi",
-  "main": "index.js",
+  "main": "bzApiMng.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GermanGJ/ManagerApiBizagi/issues"
   },
-  "homepage": "https://github.com/GermanGJ/ManagerApiBizagi#readme"
+  "homepage": "https://github.com/GermanGJ/ManagerApiBizagi#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }

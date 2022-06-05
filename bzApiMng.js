@@ -1,5 +1,5 @@
-class BzApiMng {
-
+class BzApiMng 
+{
   constructor (IDClient, IDSecret) {
     this.ClienteID = IDClient;
     this.SecretID = IDSecret;
@@ -12,3 +12,13 @@ class BzApiMng {
 }
 
 module.exports = BzApiMng;
+
+
+/*
+const GetToken = async function () {
+  return "DE·$KD)·M";
+}
+module.exports = {
+  GetToken
+}
+*/
