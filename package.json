@@ -1,0 +1,19 @@
+{
+  "name": "managerapibizagi",
+  "version": "1.0.0",
+  "description": "Manager api BizAgi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GermanGJ/ManagerApiBizagi.git"
+  },
+  "author": "2GJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GermanGJ/ManagerApiBizagi/issues"
+  },
+  "homepage": "https://github.com/GermanGJ/ManagerApiBizagi#readme"
+}
