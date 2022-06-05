@@ -1,0 +1,2 @@
+# ManagerApiBizagi
+Manager Api Bizagi.
