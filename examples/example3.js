@@ -3,7 +3,7 @@
 //var ERROR = bizagiUtil.error;
 //var RESPONSE = bizagiUtil.getResponse;
 
-const bzApiMng = require('./bzApiMng');
+const bzApiMng = require('../bzApiMng');
  
 /**
  * @author German Gomez
@@ -14,9 +14,10 @@ async function invoke(globals, actionName, data, authenticationType, LOG, callba
     const ClientID = "90f9aad444bb6f6b9e359c18d142b401d0ea6b131a0120391b4c36cc51b4bac1";
     const SecretID = "cc1064dbcda49ad2e01de2dba6bf2b65de3a8a984a1c60e0c89a70225332468e";
     const BaseURL = "https://dev-oolab-bizagiplatform.bizagi.com/";
+    const IDCase = 12951;
 
     const bzApi = new bzApiMng(BaseURL, ClientID, SecretID);
-    const tk = await bzApi.bzToken();
+    const tk = await bzApi.bzGetWorkItems(IDCase);
     console.log("Respuesta tk ==> ");
     console.log(tk);
     

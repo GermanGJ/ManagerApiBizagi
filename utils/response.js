@@ -1,21 +1,30 @@
-exports.success = function (req, res, message, status) {
-    res.status(status || 200).send({
+exports.success = async function (message, status) 
+{
+
+    let OutStatus = status || 201;
+    let OutMessage = message || 'Succesful.';
+    
+    const res = {
+        status: OutStatus,
         error: '',
-        data: message
-    });
+        data: OutMessage
+    };
+
+    return res;
 }
 
-exports.error = function (message, status, details) {
+exports.error = async function (message, status, details) 
+{
 
     let OutStatus = status || 500;
     let OutMessage = message || 'Unidentified error.';
-    let OutDetails = details.toString() || 'no details.';
+    let OutDetails = details || 'no details.';
 
-    res = {
+    const res = {
+        status: OutStatus,
         error: {
-            status: OutStatus,
             error: OutMessage,
-            errorDescription: OutDetails
+            errorDescription: OutDetails.toString()
         },
         data: ''
     };
