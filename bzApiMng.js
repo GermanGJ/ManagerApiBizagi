@@ -92,13 +92,12 @@ class BzApiMng
       const resAxi = await axios({
         url: this.URLBase + "/odata/data/cases(" + IDCASE + ")/workitems(" + IDWI + ")/next",
         method: 'post',
-        timeout: 10000,
+        timeout: 35000,
         headers: {
-          'Authorization': "Bearer " + this.token.access_token
+          'Authorization': "Bearer " + this.token.access_token,
+          'Content-Type': 'application/json'
         },
-        data: {
-          "startParameters": [bzParams]
-        }
+        data: bzParams
       });
   
       if (resAxi.status != 200)
